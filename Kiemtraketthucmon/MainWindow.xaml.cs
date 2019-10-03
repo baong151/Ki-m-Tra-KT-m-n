@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Kiemtraketthucmon;
 namespace Kiemtraketthucmon
 {
     /// <summary>
@@ -23,6 +23,18 @@ namespace Kiemtraketthucmon
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Btn_ok_Click(object sender, RoutedEventArgs e)
+        {
+            Cho cho = new Cho();
+            cho.DongvatKeu = "Gâu gâu";
+            cho.DongvatMauLong = "Đen";
+            cho.Talk();
+            Meo meo = new Meo();
+            meo.DongvatKeu = "Meo meo";
+            meo.DongvatMauLong = "Trắng";
+            meo.Talk();
         }
     }
 }

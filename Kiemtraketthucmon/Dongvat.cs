@@ -45,9 +45,9 @@ namespace Kiemtraketthucmon
 
         public virtual void Talk()
         {
-            if (DongvatKeu.Equals("Gâu gâu") && (DongvatMauLong.Equals("Đỏ")))
+            if (DongvatKeu.Equals("Gâu gâu") && (DongvatMauLong.Equals("Đen")))
                 MessageBox.Show(this.DongvatKeu + " Tôi là chó lông màu:" + this.DongvatMauLong);
-            else if (DongvatKeu.Equals("Meo meo") && (DongvatMauLong.Equals("Hồng")))
+            else if (DongvatKeu.Equals("Meo meo") && (DongvatMauLong.Equals("Trắng")))
                 MessageBox.Show(this.DongvatKeu + " Tôi là mèo lông màu:" + this.DongvatMauLong);
         }
     }
